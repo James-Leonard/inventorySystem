@@ -5,9 +5,9 @@
 <div class="content-section"> 
     {{ form.media }}
     <form method="POST">
+        {% csrf_token %}
         <fieldset>
             <legend class="border-bottom pd2 mb-4 text-center">Login Form </legend>
-            {% csrf_token %}
             <div class="form-group"> {{ form|crispy }} </div>
             <div class="form-group pt-4">
                 <button class="btn btn-outline-success" type="submit">Login</button>
