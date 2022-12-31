@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-jg4)g+-g3b_x+skoki7v80k*^e4c3i_-qu%xy!mnj^29%z3^9-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # app
-    'inventory.apps.InventoryConfig',
+    'inventory',
 
     # third-party app
     'crispy_forms',
