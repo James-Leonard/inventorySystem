@@ -26,7 +26,10 @@ SECRET_KEY = 'django-insecure-jg4)g+-g3b_x+skoki7v80k*^e4c3i_-qu%xy!mnj^29%z3^9-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', 'inventoryfirst.up.railway.app']
+ALLOWED_HOSTS = ['*', 'inventoryfirst.up.railway.app',
+                 'https://inventoryfirst.up.railway.app']
+CSRF_TRUSTED_ORIGINS = [
+    'https://inventoryfirst.up.railway.app', 'https://inventoryfirst.up.railway.app']
 
 
 # Application definition
